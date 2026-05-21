@@ -1,0 +1,89 @@
+<svg width="340" height="80" viewBox="0 0 340 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    
+    <!-- Main Gradient -->
+    <linearGradient id="mainGradient" x1="0" y1="0" x2="80" y2="80">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+
+    <!-- Text Gradient -->
+    <linearGradient id="textGradient" x1="80" y1="0" x2="320" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#93C5FD"/>
+    </linearGradient>
+
+    <!-- Glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+  </defs>
+
+  <!-- Logo Box -->
+  <rect
+    x="5"
+    y="5"
+    width="64"
+    height="64"
+    rx="20"
+    fill="url(#mainGradient)"
+    filter="url(#glow)"
+  />
+
+  <!-- Heart Shape -->
+  <path
+    d="M37 50C37 50 19 39 19 25.5C19 19.5 23.5 16 28.5 16C32 16 34.5 18 37 21C39.5 18 42 16 45.5 16C50.5 16 55 19.5 55 25.5C55 39 37 50 37 50Z"
+    fill="white"
+    fill-opacity="0.95"
+  />
+
+  <!-- Medical Plus -->
+  <path
+    d="M37 23V36"
+    stroke="#0EA5E9"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M30.5 29.5H43.5"
+    stroke="#0EA5E9"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+
+  <!-- Decorative Dot -->
+  <circle cx="56" cy="18" r="4" fill="#DBEAFE"/>
+
+  <!-- Brand Name -->
+  <text
+    x="88"
+    y="46"
+    fill="url(#textGradient)"
+    font-size="38"
+    font-family="Poppins, Montserrat, sans-serif"
+    font-weight="800"
+    letter-spacing="1"
+  >
+    Medi-Flow
+  </text>
+
+  <!-- Tagline -->
+  <text
+    x="92"
+    y="65"
+    fill="#94A3B8"
+    font-size="12"
+    font-family="Inter, sans-serif"
+    letter-spacing="4"
+  >
+    DIGITAL HEALTHCARE PLATFORM
+  </text>
+
+</svg>
